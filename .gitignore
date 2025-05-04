@@ -1,0 +1,62 @@
+# === ENVIRONMENT VARIABLES ===
+.env
+.env.*
+
+
+# === LOG FILES ===
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+
+# === DEPENDENCIES ===
+node_modules/
+client/node_modules/
+server/node_modules/
+
+
+# === BUILD OUTPUT ===
+dist/
+dist-ssr/
+build/
+client/build/
+client/dist/
+server/dist/
+*.local
+
+
+# === OS / SYSTEM FILES ===
+.DS_Store
+Thumbs.db
+
+
+# === IDE / EDITOR CONFIG ===
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?  # Covers .swn, .swp, etc
+
+
+# === TEST / COVERAGE ===
+coverage/
+*.lcov
+
+
+# === NEXT.JS / VITE (if used) ===
+.next/
+out/
+.client-cache/
+*.cache
+.cache/
+
+
+# === MISC ===
+*.tgz

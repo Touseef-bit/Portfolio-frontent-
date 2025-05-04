@@ -1,0 +1,86 @@
+
+.name {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  border-right: 5px solid purple;
+  overflow: hidden;
+  animation: blink 0.75s step-end 1s infinite alternate,
+    typing 1.25s steps(16) 2.25s alternate;
+  white-space: nowrap;
+}
+
+.text {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 14ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .img {
+    width: 12rem;
+    margin-right: 3rem;
+  }
+  .text {
+    margin-left: 3rem;
+    font-size: 22px;
+  }
+  .name {
+    font-size: 29px;
+  }
+}
+
+@media (max-width: 640px) {
+  .img {
+    width: 7rem;
+    margin-right: 2rem;
+  }
+  .text {
+    margin-left: 2rem;
+    font-size: 16px;
+  }
+  .name {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .img {
+    width: 7rem;
+    margin-right: 1.5rem;
+  }
+  .text {
+    margin-left: 1.5rem;
+    font-size: 16px;
+  }
+  .name {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .img {
+    width: 6rem;
+    margin-right: 1.5rem;
+  }
+  .text {
+    margin-left: 1.5rem;
+    font-size: 10px;
+  }
+  .name {
+    font-size: 12px;
+  }
+}

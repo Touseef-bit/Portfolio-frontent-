@@ -1,0 +1,121 @@
+.contact-me{
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+}
+
+.contact-heading{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.contact-text{
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .contact-me {
+    font-size: 26px;
+  }
+  .form-div {
+    width: 20rem; 
+  }
+  .contact-text-div{
+    width: 300px;
+  }
+  .contact-heading{
+    font-size: 23px;
+  }
+  .contact-text{
+    font-size: 15px;
+    width: 260px;
+  }
+  .text-area {
+    height: 90px;
+    padding: 9px;
+    margin-bottom: 18px;
+  }
+  .contact-btn {
+    padding: 9px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .contact-form {
+    padding: 14px;
+  }
+  .contact-me {
+    font-size: 23px;
+  }
+  .contact-card {
+    width: 24rem;
+    height: 8rem;
+  }
+  
+  .contact-text-div{
+    width: 250px;
+  }
+  .contact-heading{
+    font-size: 20px;
+  }
+  .contact-text{
+    font-size: 13px;
+  }
+  .form-div {
+    width: 20rem; 
+  }
+  .text-area {
+    height: 90px;
+    padding: 7px;
+    margin-bottom: 18px;
+  }
+  .contact-btn {
+    padding: 7px;
+  }
+  div form input {
+    padding: 7px;
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-div {
+    justify-content: center !important;
+  }
+  .contact-form {
+    padding: 28px;
+  }
+  .contact-text-div{
+    width: 250px !important;
+  }
+  .contact-heading{
+    font-size: 20px;
+  }
+  .contact-text{
+    font-size: 13px;
+  }
+  .contact-me {
+    font-size: 23px;
+  }
+  .form-div {
+    width: 17rem;
+  }
+  .contact-card {
+    width: 17rem;
+    height: 8rem;
+  }
+  .text-area {
+    height: 90px;
+    padding: 8px;
+    margin-bottom: 13px;
+  }
+  .contact-btn {
+    padding: 5px;
+  }
+  div form input {
+    padding: 7px;
+    margin-bottom: 13px;
+  }
+}

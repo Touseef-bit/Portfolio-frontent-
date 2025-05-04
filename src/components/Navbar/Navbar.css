@@ -1,0 +1,129 @@
+.link{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+@keyframes movingtodown {
+  from {
+    top: -1000px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-radius: 10px;
+  bottom: -10px;
+  left: 0;
+  height: 4px;
+  background-color: purple;
+  transition: all 0.5s;
+}
+nav ul {
+  z-index: 100;
+}
+
+.cross {
+  display: none;
+}
+
+.icon {
+  display: none;
+}
+
+.link:hover::before {
+  width: 100%;
+}
+
+.heading {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+}
+
+@media screen and (min-width: 1024px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+  .link {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 1rem;
+  }
+  .icon {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    top: 0px;
+    background-color: black;
+    height: 100%;
+    padding: 0;
+    width: 15rem;
+    z-index: 100;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.75s;
+  }
+  nav ul li {
+    margin: 1.5rem;
+  }
+  .cross {
+    display: block;
+  }
+  .link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+    bottom: -10px;
+    left: 0;
+    height: 4px;
+    background-color: purple;
+    transition: all 0.5s;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .heading {
+    font-size: 1rem;
+  }
+  nav ul {
+    width: 13rem;
+  }
+  nav ul li a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 375px) {
+  nav ul {
+    width: 12rem;
+  }
+  nav ul li a {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .heading {
+    font-size: 0.9rem;
+  }
+  nav ul {
+    width: 10rem;
+  }
+  nav ul li a {
+    font-size: 15px;
+  }
+}
