@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import Navbar from "../Navbar/Navbar";
 import bg from "../../assets/bg.jpg";
+import mainImg from "../../assets/main.jpg";
 import "./main.css";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -14,7 +15,7 @@ const Main = () => {
 
     tl.from(main.current, { opacity: 0, duration: 1 })
       .from(img.current, { opacity: 0, duration: 1 })
-      .from(text.current, { x: -50, opacity: 0, duration: 0.7 });
+      .from(text.current, { x: -50, opacity: 0, duration: .7 });
   }, []);
   return (
     <>
@@ -36,25 +37,9 @@ const Main = () => {
           </div>
           <div
             ref={img}
-            className="img mr-20 overflow-hidden rounded-full w-80 z-20 "
+            className="img mr-20 overflow-hidden rounded-full w-72 z-20 "
           >
-            <svg
-              className="w-6 h-6 dark:text-white"
-              aria-hidden="true"
-              xmlns="file:///C:/Users/balti/Downloads/main.svg"
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18 17.94 6M18 18 6.06 6"
-              />
-            </svg>
+            <img src={mainImg} alt="image" />
           </div>
         </div>
         <div className="absolute top-0 opacity-20 h-screen overflow-hidden">
