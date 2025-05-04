@@ -5,7 +5,7 @@
   border-right: 5px solid purple;
   overflow: hidden;
   animation: blink 0.75s step-end 1s infinite alternate,
-    typing 1.25s steps(16) 2.25s alternate;
+    typing 1.25s steps(16) 2s alternate;
   white-space: nowrap;
 }
 
