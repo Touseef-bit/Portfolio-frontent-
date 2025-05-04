@@ -8,7 +8,7 @@ import flowbiteReact from "flowbite-react/plugin/vite";
     server: {
       proxy: {
         '/api': {
-          target: 'http://localhost:3000',
+          target: 'https://beckend-portfolio-kappa.vercel.app',
           changeOrigin: true,
           secure: false,
         },
