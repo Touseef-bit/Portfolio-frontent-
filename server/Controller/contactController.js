@@ -20,6 +20,7 @@ const sendEmail = async (req, res, next) => {
         } else {
             return next(new appError('Please enter a valid Email Address.', 400))
         }
+        next()
     } catch (error) {
         return next(new appError('Internal Server Error!', 500))
     }

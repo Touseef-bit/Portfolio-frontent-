@@ -15,10 +15,11 @@ app.use(express.urlencoded({ extended: false }));
 
 // route
 
-app.get('/',(req,res)=>{
-  res.json({
-    message:"welcome to beckend"
+app.get('/',(req,res,next)=>{
+  return res.json({
+    message:"welcome to beckend",
   })
+  next()
 })
 
 app.use('/api/v1',emailRoutes)
