@@ -5,6 +5,7 @@ var app = express()
 const port = process.env.PORT || 3000
 const globalErrorHandler = require('../middleware/errorMiddleware')
 const emailRoutes = require('../routes/emailRoutes')
+const serverless = require('serverless-http');
 
 
 
@@ -25,5 +26,4 @@ app.use('/api/v1',emailRoutes)
 app.use(globalErrorHandler)
 
 
-const serverless = require('serverless-http');
-module.exports.handler = serverless(app);
+module.exports = serverless(app);
