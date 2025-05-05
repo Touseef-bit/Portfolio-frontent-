@@ -1,5 +1,6 @@
 var express = require('express');
 var logger = require('morgan');
+const cors = require('cors')
 
 var app = express()
 const port = process.env.PORT || 3000
@@ -10,6 +11,11 @@ const serverless = require('serverless-http');
 
 
 app.use(logger('dev'));
+app.use(cors({
+  origin: 'http://localhost:5173',
+  methods: ['GET', 'POST'],
+  credentials: true
+}))
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -26,5 +32,6 @@ app.use('/api/v1',emailRoutes)
 
 app.use(globalErrorHandler)
 
-
-module.exports = serverless(app);
+app.listen(port,()=>{
+  console.log('Connected to Server')
+})
