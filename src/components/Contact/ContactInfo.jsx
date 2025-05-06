@@ -27,7 +27,7 @@ const ContactInfo = () => {
     });
 
     tl.from(contactCard.current, {
-      scale: 0.7,
+      x:50,
       opacity: 0,
       duration: .5,
     });
