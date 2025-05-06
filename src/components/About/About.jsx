@@ -10,8 +10,8 @@ gsap.registerPlugin(ScrollTrigger);
 const About = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "https://example.com/file.pdf";
-    link.download = "file.pdf";
+    link.href = "../../assets/cv.pdf";
+    link.download = "cv.pdf";
     link.click();
   };
 
