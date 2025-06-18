@@ -20,7 +20,7 @@ const ContactInfo = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: contactCard.current,
-        start: "top 70%",
+        start: "top 50%",
         end: "top 100%",
         scrub: 4,
       },
