@@ -15,9 +15,8 @@ const Contact = () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: contactHeading.current,
-          start: "top 90%",
-          scrub:4,
-          end:'top 20%',
+          start: "top 80%",
+          toggleActions: "play reverse play reverse",
         },
       });
   
@@ -34,7 +33,7 @@ const Contact = () => {
     },[]);
   return (
     <>
-      <main id="Contact" className="contact-main w-full mb-4">
+      <main id="Contact" className="contact-main w-full h-96 mb-4">
         <div ref={contactHeading} className="block contact-me text-center text-4xl underline decoration-3 underline-offset-3 text-purple-800">
           Contact Me
         </div>
