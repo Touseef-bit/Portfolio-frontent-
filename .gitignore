@@ -60,3 +60,4 @@ out/
 
 # === MISC ===
 *.tgz
+.vercel
