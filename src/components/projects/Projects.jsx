@@ -31,8 +31,8 @@ const Projects = () => {
       scrollTrigger: {
         trigger: projectHeading.current,
         start: "top 90%",
-        scrub:2,
-        end:'top 20%',
+        toggleActions: "play none none none",
+        once: true,
       },
     });
 

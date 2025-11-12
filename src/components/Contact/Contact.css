@@ -1,3 +1,91 @@
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-text-div {
+  max-width: 600px;
+  text-align: center;
+}
+
+.contact-form-wrapper {
+  width: 100%;
+  max-width: 540px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-wrapper section,
+.contact-form-wrapper .container {
+  width: 100%;
+}
+
+.contact-form-wrapper section.text-gray-600.body-font.relative .container {
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem;
+}
+
+.contact-form-wrapper section.text-gray-600.body-font.relative .container > div {
+  border-radius: 20px;
+  padding: 1.35rem;
+  box-shadow: 0 18px 40px -30px rgba(79, 70, 229, 0.55);
+  border: 1px solid rgba(79, 70, 229, 0.2);
+  transform: scale(0.95);
+  transform-origin: top center;
+}
+
+.contact-form-wrapper section.text-gray-600.body-font.relative h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contact-form-wrapper section.text-gray-600.body-font.relative p {
+  font-size: 0.85rem;
+}
+
+.contact-form-wrapper section.text-gray-600.body-font.relative label {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.contact-form-wrapper section.text-gray-600.body-font.relative input,
+.contact-form-wrapper section.text-gray-600.body-font.relative textarea {
+  padding: 0.55rem 0.75rem;
+  border-radius: 10px;
+}
+
+.contact-form-wrapper section.text-gray-600.body-font.relative button {
+  font-size: 0.9rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 10px;
+}
+
+@media (min-width: 1024px) {
+  .contact-div {
+    flex-direction: row;
+    /* align-items: flex-start; */
+    justify-content: center;
+  }
+
+  .contact-text-div {
+    text-align: left;
+  }
+}
+
 .contact-me{
   font-family: "Ubuntu", sans-serif;
   font-style: normal;

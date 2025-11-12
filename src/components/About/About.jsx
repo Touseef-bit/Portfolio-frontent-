@@ -27,6 +27,7 @@ const About = () => {
         start: "top 100%",
         scrub:4,
         end: "top 20%",
+        once: true,
       },
     });
 
