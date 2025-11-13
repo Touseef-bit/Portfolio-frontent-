@@ -5,6 +5,7 @@ import Main from "./components/main/Main";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import ChatWidget from "./components/ChatWidget";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Spinner } from "flowbite-react";
@@ -43,6 +44,7 @@ function App() {
         </div>
       )}
       <ToastContainer />
+      <ChatWidget />
     </>
   );
 }
